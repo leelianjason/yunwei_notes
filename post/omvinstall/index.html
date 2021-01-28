@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>OMVinstall - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="olOwOlo" /><meta name="description" content="准备工作 准备一个U盘和软碟通刻录软件 一台服务器或者虚拟机 2个硬盘（或2个硬盘分区）。 OpenMediaVault需要单独的磁盘或分区用于操作" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.80.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/omvinstall/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="OMVinstall" />
+<meta property="og:description" content="准备工作 准备一个U盘和软碟通刻录软件 一台服务器或者虚拟机 2个硬盘（或2个硬盘分区）。 OpenMediaVault需要单独的磁盘或分区用于操作" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/omvinstall/" />
+<meta property="article:published_time" content="2021-01-28T16:02:45+08:00" />
+<meta property="article:modified_time" content="2021-01-28T16:02:45+08:00" />
+<meta itemprop="name" content="OMVinstall">
+<meta itemprop="description" content="准备工作 准备一个U盘和软碟通刻录软件 一台服务器或者虚拟机 2个硬盘（或2个硬盘分区）。 OpenMediaVault需要单独的磁盘或分区用于操作">
+<meta itemprop="datePublished" content="2021-01-28T16:02:45+08:00" />
+<meta itemprop="dateModified" content="2021-01-28T16:02:45+08:00" />
+<meta itemprop="wordCount" content="1630">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OMVinstall"/>
+<meta name="twitter:description" content="准备工作 准备一个U盘和软碟通刻录软件 一台服务器或者虚拟机 2个硬盘（或2个硬盘分区）。 OpenMediaVault需要单独的磁盘或分区用于操作"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Even</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">OMVinstall</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-01-28 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#准备工作">准备工作</a>
+          <ul>
+            <li><a href="#刻录系统到u盘">刻录系统到U盘</a></li>
+          </ul>
+        </li>
+        <li><a href="#戴尔r420安装系统">戴尔R420安装系统</a>
+          <ul>
+            <li><a href="#安装前准备">安装前准备</a></li>
+            <li><a href="#修改启动模式">修改启动模式</a></li>
+            <li><a href="#安装系统">安装系统</a></li>
+            <li><a href="#默认密码">默认密码</a></li>
+          </ul>
+        </li>
+        <li><a href="#系统配置">系统配置</a>
+          <ul>
+            <li><a href="#1登录web端">1.登录web端</a></li>
+            <li><a href="#2修改密码和时区">2.修改密码和时区</a></li>
+            <li><a href="#3挂载数据磁盘">3.挂载数据磁盘</a></li>
+            <li><a href="#2文件系统分区">2.文件系统分区</a></li>
+            <li><a href="#3给文件夹划分权限">3.给文件夹划分权限</a></li>
+            <li><a href="#4创建用户组对应的文件夹">4.创建用户组对应的文件夹</a></li>
+            <li><a href="#5开启smb共享目录">5.开启SMB共享目录</a></li>
+            <li><a href="#6登录使用">6.登录使用</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="准备工作">准备工作</h2>
+<ol>
+<li>准备一个U盘和软碟通刻录软件</li>
+<li>一台服务器或者虚拟机</li>
+<li>2个硬盘（或2个硬盘分区）。 OpenMediaVault需要单独的磁盘或分区用于操作系统安装和单独的磁盘或数据分区</li>
+<li>最小 1GB RAM</li>
+</ol>
+<h3 id="刻录系统到u盘">刻录系统到U盘</h3>
+<p>步骤和安装Centos，ubuntu系统一样。</p>
+<p>依次点击：</p>
+<ul>
+<li>
+<p>启动</p>
+</li>
+<li>
+<p>写入磁盘镜像</p>
+</li>
+<li>
+<p>格式化</p>
+</li>
+<li>
+<p>格式化为FAT32格式</p>
+</li>
+<li>
+<p>写入</p>
+</li>
+</ul>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127173748669-1611802609695.png" alt="image-20210127173748669"></p>
+<h2 id="戴尔r420安装系统">戴尔R420安装系统</h2>
+<p>OpenMediaVault安装与配置教程 ：https://www.rosnas.com/1178.html</p>
+<p>软件下载地址：</p>
+<p><a href="https://sourceforge.net/projects/openmediavault/files/5.5.11/">https://sourceforge.net/projects/openmediavault/files/5.5.11/</a></p>
+<h3 id="安装前准备">安装前准备</h3>
+<p>本次机器为戴尔R420，制作了RAID10，将硬盘分为300g系统分区和8T数据分区</p>
+<p>制作好RAID级别，并且保持机器有两个分区或者硬盘，只将机器安装到系统盘中，另一个数据盘中。</p>
+<h3 id="修改启动模式">修改启动模式</h3>
+<p>OMV只支持UEFI方式启动，所以需要修改启动模式为UEFI。</p>
+<p>将机器开机后，当看到右上角以下消息后按 <F11> 键：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;F11&gt; = UEFI Boot Manager（&lt;F11&gt; = UEFI 引导管理器）
+还有一些F10,F12的信息
+</code></pre></td></tr></table>
+</div>
+</div><p>等待进入 Boot Manager</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/20200831150113266-1611802600944.jpg" alt="DELL PowerEdge R620 U盘启动_lipei_csdn的博客-CSDN博客"></p>
+<p><strong>菜单介绍</strong></p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127174934591-1611802612749.png" alt="image-20210127174934591"></p>
+<p>选择<code>Launch System Setup（启动系统设置）</code>，将启动模式修改为UEFI模式，然后按ESC退出到 Boot Manager界面</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127175137558-1611802614445.png" alt="image-20210127175137558"></p>
+<p>选择UEFI启动设备，<code>Hard Drive C</code>，等待从U盘启动</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127175702230-1611802615964.png" alt="image-20210127175702230"></p>
+<h3 id="安装系统">安装系统</h3>
+<p>安装文档：https://post.smzdm.com/p/av7z2564/</p>
+<p>选择install</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127175809531-1611802617478.png" alt="image-20210127175809531"></p>
+<p>选择语言为第一个，尽量不要选择中文，会导致进系统后字符集错误，显示不全</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127181358359-1611802618805.png" alt="image-20210127181358359"></p>
+<p>选择位置用于设置时区</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/5e818db63e75d9626.png_e680-1611802621093.jpg" alt="OMV安装：系统安装设置及一些功能的开启"></p>
+<p>选择位置：<strong>选择china</strong></p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127181520047-1611802622629.png" alt="image-20210127181520047"></p>
+<p>选择键盘：<strong>美式英语</strong></p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127181603646-1611802624175.png" alt="image-20210127181603646"></p>
+<p>扫描网卡，如果有多网卡，会让你选择，请确认网线插得那个网口</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127181648319-1611802625405.png" alt="image-20210127181648319"></p>
+<p>可能会失败，点击继续，选择<code>Configure network manually</code>，去配置固定IP</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127181823565-1611802627262.png" alt="image-20210127181823565"></p>
+<p>如果你想使用固定IP，也可以在DHCP获取成功后，选择<code>返回</code>到此界面，再去选择<code>Configure network manually</code></p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127181937305-1611802628918.png" alt="image-20210127181937305"></p>
+<p>填写网络配置就可以了，</p>
+<p>配置主机名，不改就直接回车</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182100830-1611802631054.png" alt="image-20210127182100830"></p>
+<p>配置域名解析的名字，内网用不上，跳过</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182115326-1611802632726.png" alt="image-20210127182115326"></p>
+<p>配置服务器密码，这个密码是登录服务器的不是web端后台的</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182207885-1611802635039.png" alt="image-20210127182207885"></p>
+<p>确认密码</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182241085-1611802636406.png" alt="image-20210127182241085"></p>
+<p>进行磁盘分区</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182347855-1611802638252.png" alt="image-20210127182347855"></p>
+<p>选择安装的系统盘</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182405437-1611802639668.png" alt="image-20210127182405437"></p>
+<p>等待自动分区和安装</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182627382-1611802641141.png" alt="image-20210127182627382"></p>
+<p>配置软件包仓库，选择中国</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182316502-1611802642541.png" alt="image-20210127182316502"></p>
+<p>配置软件源，选择清华源</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182739437-1611802644117.png" alt="image-20210127182739437"></p>
+<p>没有代理，直接跳过</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182756755-1611802646405.png" alt="image-20210127182756755"></p>
+<p>配置软件源中</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127182812571-1611802648158.png" alt="image-20210127182812571"></p>
+<p>安装完成,拔掉U盘，点继续进行重启</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127183006758-1611802649379.png" alt="image-20210127183006758"></p>
+<h3 id="默认密码">默认密码</h3>
+<p>系统</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">用户：root
+密码：安装时设置的密码
+</code></pre></td></tr></table>
+</div>
+</div><p>Web界面</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">用户：admin
+密码：openmediavault
+</code></pre></td></tr></table>
+</div>
+</div><p>服务器已由DHCP配置,在shell上以root用户身份登录并运行命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">ip addr
+</code></pre></td></tr></table>
+</div>
+</div><p>获取当前的IP地址，如IP地址是192.168.1.11</p>
+<h2 id="系统配置">系统配置</h2>
+<h3 id="1登录web端">1.登录web端</h3>
+<p>浏览器打开192.168.1.11,默认密码为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">用户：admin
+密码：openmediavault
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2修改密码和时区">2.修改密码和时区</h3>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127183201446-1611802651621.png" alt="image-20210127183201446"></p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127183212238-1611802652878.png" alt="image-20210127183212238"></p>
+<h3 id="3挂载数据磁盘">3.挂载数据磁盘</h3>
+<p>参考文档：http://www.songming.me/openmediavault-hdd-smba-settings.html</p>
+<p>挂载数据盘</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127161153810-1611802654646.png" alt="image-20210127161153810"></p>
+<h3 id="2文件系统分区">2.文件系统分区</h3>
+<p>文件系统进行分区，ext4格式</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127161328495-1611802656358.png" alt="image-20210127161328495"></p>
+<p>执行结果</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127161337487-1611802657700.png" alt="image-20210127161337487"></p>
+<p>点击挂载</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127162619499-1611802659046.png" alt="image-20210127162619499"></p>
+<h3 id="3给文件夹划分权限">3.给文件夹划分权限</h3>
+<p>管理的逻辑为：创建一个文件夹，再创建用户和用户组，将用户加入到用户组中，在共享文件夹中的ACL控制中将用户组加入到文件夹中，这样就可以根据用户组队文件夹进行权限划分</p>
+<h4 id="创建用户组"><strong>创建用户组</strong></h4>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127161425827-1611802660367.png" alt="image-20210127161425827"></p>
+<h4 id="创建用户">创建用户</h4>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127161723767-1611802662421.png" alt="image-20210127161723767"></p>
+<h3 id="4创建用户组对应的文件夹">4.创建用户组对应的文件夹</h3>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127163138219-1611802664646.png" alt="image-20210127163138219"></p>
+<p>创建文件夹介绍：</p>
+<ul>
+<li>名称：共享文件夹的显示名称，会显示在WINDOW共享界面</li>
+<li>设备：数据存放的分区位置</li>
+<li>路径：数据在分区中存放的路径，这个路径和OMV系统中的存放逻辑相同，在<code>/src/设备名</code>目录下</li>
+<li>权限：选择权限管理方案</li>
+</ul>
+<p>选择权限方式：</p>
+<ul>
+<li>如果只想让这个组的人访问，就选择<code>管理员读写，用户读写，其他不可访问</code></li>
+<li>如果想让所有人访问，就选择<code>每个人读写</code></li>
+</ul>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210128095807239-1611802666341.png" alt="image-20210128095807239"></p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210128095903795-1611802668045.png" alt="image-20210128095903795"></p>
+<p>也可以创建子文件夹，可以指定在HRcenter下面，如：HRCenter/子目录</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210128100005052-1611802669422.png" alt="image-20210128100005052"></p>
+<h3 id="5开启smb共享目录">5.开启SMB共享目录</h3>
+<p>点击启用，这个时候，我们只需要将上一步创建的文件夹添加到SMB共享中即可。</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127183707121-1611802670758.png" alt="image-20210127183707121"></p>
+<p>点击共享</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127183715239-1611802672525.png" alt="image-20210127183715239"></p>
+<p>配置访问规则</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210127183759421-1611802674085.png" alt="image-20210127183759421"></p>
+<p>一定这样配置，否则点开路径就会让输密码。</p>
+<h3 id="6登录使用">6.登录使用</h3>
+<p>在文件夹路径上输入<code>\\192.168.1.11</code></p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210128101643535-1611802675478.png" alt="image-20210128101643535"></p>
+<p>打开之后</p>
+<p><img src="%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AEOpenmediavault.assets/image-20210128101711453-1611802677573.png" alt="image-20210128101711453"></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">olOwOlo</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2021-01-28
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>olOwOlo</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
